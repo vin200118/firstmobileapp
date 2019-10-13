@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "main": "index.jsx",
   "scripts": {
-    "start": "webpack-dev-server --mode development --open --hot",
-    "heroku-postbuild": "webpack -p",
-    "build": "webpack --mode production",
-    "test": "jest"
+    "dev": "react-scripts start",
+    "start": "serve -s build",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
   },
   "license": "MIT",
   "dependencies": {
@@ -34,6 +36,7 @@
     "reactstrap": "^7.0.2",
     "redux": "^4.0.1",
     "redux-logger": "^3.0.6",
+    "serve": "^9.6.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.28.3",
     "webpack-cli": "^3.2.0",
