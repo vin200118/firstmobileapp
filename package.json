@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.jsx",
   "scripts": {
-    "start": "node server.js",
+    "start": "webpack-dev-server --mode development --open --hot",
     "heroku-postbuild": "webpack -p",
     "build": "webpack --mode production",
     "test": "jest"

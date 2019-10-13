@@ -9,6 +9,7 @@ import {
   } from 'react-router-dom';
 
 import Home from './home/home.jsx'
+import Test from './home/test.jsx'
 
 
 class Main extends Component{
@@ -27,6 +28,7 @@ class Main extends Component{
                   </ul>
                  </nav>
                  <Route path="/" component={Home}/>
+                 <Route path="/test" component={Test}/>
                     
         		</div>
         	);
