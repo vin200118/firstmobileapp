@@ -8,8 +8,7 @@ import {
     Switch,
   } from 'react-router-dom';
 
-import Home from './home/home.jsx'
-import Test from './home/test.jsx'
+import app from './home/app.jsx'
 
 
 class Main extends Component{
@@ -20,15 +19,12 @@ class Main extends Component{
                   <ul className="nav navbar-nav">
 
                  
-                    <li><Link to="/">Homes</Link></li>
                    
-                    <li><Link to="/test">test</Link></li>
-                  
-
-                  </ul>
+                    <li><Link to="/">IONIC</Link></li>
+                   
+                     </ul>
                  </nav>
-                 <Route path="/" component={Home}/>
-                 <Route path="/test" component={Test}/>
+                 <Route path="/" component={app}/>
                     
         		</div>
         	);

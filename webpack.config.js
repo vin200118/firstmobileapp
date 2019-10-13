@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
    entry: './index.js',
    output: {
-	    path: path.resolve(__dirname, 'dist'),
+	    path: path.resolve(__dirname, __dirname),
 	    filename: 'index_bundle.js',
 	    publicPath: '/'
 	  },
@@ -25,6 +25,10 @@ module.exports = {
       {
         test: /\.(css|less)$/,
         use: ["style-loader", "css-loader"]
+      },
+      {
+          test: /\.svg$/,
+          loader: 'svg-inline-loader'
       }
     ]
   },
