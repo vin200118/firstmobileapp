@@ -3,12 +3,8 @@
   "version": "1.0.0",
   "main": "index.jsx",
   "scripts": {
-    "dev": "react-scripts start",
-    "start": "serve -s build",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "webpack -p --config ./webpack.config.js --progress"
+    "start": "node server.js", // serves the application
+  "heroku-postbuild": "webpack -p" // runs after installation
   },
   "license": "MIT",
   "dependencies": {
