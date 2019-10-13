@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "main": "index.jsx",
   "scripts": {
-    "start": "node server.js",
-    "build": "webpack --mode production",
-    "heroku-postbuild": "webpack -p"
+    "start": "node server.js"
   },
   "license": "MIT",
   "dependencies": {
