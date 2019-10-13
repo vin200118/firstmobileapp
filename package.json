@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.jsx",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "webpack --mode production",
+    "heroku-postbuild": "webpack -p"
   },
   "license": "MIT",
   "dependencies": {
@@ -36,7 +38,6 @@
     "redux-logger": "^3.0.6",
     "serve": "^9.6.0",
     "style-loader": "^0.23.1",
-    "webpack": "^4.28.3",
     "webpack-cli": "^3.2.0",
     "webpack-dev-server": "^3.1.14"
   },
@@ -52,7 +53,8 @@
     "enzyme-adapter-react-16": "^1.14.0",
     "jest": "^24.8.0",
     "jest-css-modules": "^2.1.0",
-    "svg-inline-loader": "^0.8.0"
+    "svg-inline-loader": "^0.8.0",
+    "webpack": "^2.2.0"
   },
   "jest": {
     "setupFiles": [
